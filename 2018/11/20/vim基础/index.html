@@ -10,6 +10,62 @@
 
     <!--Description-->
     
+        <meta name="description" content="命令行基础基础了解
+
+
+字符
+字符含义
+
+
+
+
+~
+用户目录
+
+
+/
+盘符
+
+
+.
+当前目录
+
+
+..
+父目录
+
+
+$
+提示输入命令，无实际意义
+
+
+directory
+目录，文件夹
+
+
+file
+文件
+
+
+make
+新建
+
+
+list
+罗列
+
+
+link
+链接
+
+
+echo
+回声
+
+
+touch
+">
+    
 
     <!--Author-->
     
@@ -18,7 +74,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="咸鱼的野望">
+        <meta property="og:title" content="vim基础">
     
 
     <!--Open Graph Description-->
@@ -29,7 +85,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -40,7 +96,7 @@
 
     <!-- Title -->
     
-    <title>随便写写 - 咸鱼的野望</title>
+    <title>vim基础 - 咸鱼的野望</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -127,9 +183,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -137,25 +191,169 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">#随便写写</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/2018/11/19/第二篇博客/">
-        <span class="archive-date">
-            Nov 2018
-        </span>
-        第二篇博客
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2018/11/20/vim基础/">
+                vim基础
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-11-20</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h2 id="命令行基础"><a href="#命令行基础" class="headerlink" title="命令行基础"></a>命令行基础</h2><h3 id="基础了解"><a href="#基础了解" class="headerlink" title="基础了解"></a>基础了解</h3><table>
+<thead>
+<tr>
+<th>字符</th>
+<th style="text-align:left">字符含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~</td>
+<td style="text-align:left">用户目录</td>
+</tr>
+<tr>
+<td>/</td>
+<td style="text-align:left">盘符</td>
+</tr>
+<tr>
+<td>.</td>
+<td style="text-align:left">当前目录</td>
+</tr>
+<tr>
+<td>..</td>
+<td style="text-align:left">父目录</td>
+</tr>
+<tr>
+<td>$</td>
+<td style="text-align:left">提示输入命令，无实际意义</td>
+</tr>
+<tr>
+<td>directory</td>
+<td style="text-align:left">目录，文件夹</td>
+</tr>
+<tr>
+<td>file</td>
+<td style="text-align:left">文件</td>
+</tr>
+<tr>
+<td>make</td>
+<td style="text-align:left">新建</td>
+</tr>
+<tr>
+<td>list</td>
+<td style="text-align:left">罗列</td>
+</tr>
+<tr>
+<td>link</td>
+<td style="text-align:left">链接</td>
+</tr>
+<tr>
+<td>echo</td>
+<td style="text-align:left">回声</td>
+</tr>
+<tr>
+<td>touch</td>
+<td style="text-align:left">触摸</td>
+</tr>
+<tr>
+<td>change</td>
+<td style="text-align:left">改变</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:left">命令</th>
+<th style="text-align:left">简写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建目录</td>
+<td style="text-align:left">makedirectory</td>
+<td style="text-align:left">mkdir</td>
+</tr>
+<tr>
+<td>删除</td>
+<td style="text-align:left">remove</td>
+<td style="text-align:left">rm</td>
+</tr>
+<tr>
+<td>改变目录</td>
+<td style="text-align:left">changedirectory</td>
+<td style="text-align:left">cd</td>
+</tr>
+<tr>
+<td>罗列</td>
+<td style="text-align:left">list</td>
+<td style="text-align:left">ls</td>
+</tr>
+<tr>
+<td>重命名/移动</td>
+<td style="text-align:left">move</td>
+<td style="text-align:left">mv</td>
+</tr>
+</tbody>
+</table>
+<p><strong>缩写规则删除元音 a e i o u</strong></p>
+<p>-f 强制 -r 递归</p>
+<p>绝对路径与相对路径<br>以/开头的是绝对路径</p>
+<p>常见自带命令<br>cd<br>pwd<br>whoami 我是谁</p>
+<p>批量创建 -p<br> 例如 mkdir -p dome1/dome2/dome3（引号可以防止系统识别错误<br>）</p>
+<p>ls -a 显示所有文件（即可以显示. .. 类文件，即隐藏文件）<br>ls -l 显示文件详细信息</p>
+<p>echo ‘内容’ &gt; 文件路径 创建文件并且写入内容</p>
+<p>echo ‘内容’ &gt;! 文件路径 强制创建文件并且写入内容</p>
+<p>echo ‘内容’ &gt;&gt; 文件路径 追加内容到文件内</p>
+<p>touch 文件名 创建文件</p>
+<p>cp 源路径 目标路径 复制文件<br>cp -r 源路径 目标路径 复制文件夹（递归复制）</p>
+<p>man 命令手册</p>
+<p>tree 查看目录结构</p>
+<p>curl -L 链接   下载文件</p>
+<p>拷贝网页 wget -p -H -e robots=off 网址</p>
+<p>cat 文件 查看文件内容</p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/vim/">#vim</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 
