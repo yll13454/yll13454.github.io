@@ -261,21 +261,104 @@
 </tbody>
 </table>
 <p><strong>缩写规则删除元音 a e i o u</strong></p>
-<p>-f 强制 -r 递归</p>
-<p>绝对路径与相对路径<br>以/开头的是绝对路径</p>
-<p>常见自带命令<br>cd<br>pwd<br>whoami 我是谁</p>
-<p>批量创建 -p<br> 例如 mkdir -p dome1/dome2/dome3（引号可以防止系统识别错误<br>）</p>
-<p>ls -a 显示所有文件（即可以显示. .. 类文件，即隐藏文件）<br>ls -l 显示文件详细信息</p>
-<p>echo ‘内容’ &gt; 文件路径 创建文件并且写入内容</p>
-<p>echo ‘内容’ &gt;! 文件路径 强制创建文件并且写入内容</p>
-<p>echo ‘内容’ &gt;&gt; 文件路径 追加内容到文件内</p>
-<p>touch 文件名 创建文件</p>
-<p>cp 源路径 目标路径 复制文件<br>cp -r 源路径 目标路径 复制文件夹（递归复制）</p>
-<p>man 命令手册</p>
-<p>tree 查看目录结构</p>
-<p>curl -L 链接   下载文件</p>
-<p>拷贝网页 wget -p -H -e robots=off 网址</p>
-<p>cat 文件 查看文件内容</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-f</td>
+<td style="text-align:left">强制 </td>
+</tr>
+<tr>
+<td>-r</td>
+<td style="text-align:left">递归</td>
+</tr>
+<tr>
+<td>-p</td>
+<td style="text-align:left">批量创建</td>
+</tr>
+</tbody>
+</table>
+<p><em>批量创建</em><br>例如 mkdir -p dome1/dome2/dome3（引号可以防止系统识别错误<br>）</p>
+<h3 id="绝对路径与相对路径"><a href="#绝对路径与相对路径" class="headerlink" title="绝对路径与相对路径"></a>绝对路径与相对路径</h3><p><em>以/开头的是绝对路径</em></p>
+<table>
+<thead>
+<tr>
+<th>常见自带命令</th>
+<th style="text-align:left">释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cd</td>
+<td style="text-align:left">跳转到某目录</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td style="text-align:left">显示当前目录绝对路径</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td style="text-align:left">当前目录用户</td>
+</tr>
+<tr>
+<td>ls -a</td>
+<td style="text-align:left">显示所有文件（即可以显示. .. 类文件，即隐藏文件）</td>
+</tr>
+<tr>
+<td>ls -l</td>
+<td style="text-align:left">显示文件详细信息</td>
+</tr>
+<tr>
+<td>echo ‘内容’ &gt; 文件路径</td>
+<td style="text-align:left">创建文件并且写入内容</td>
+</tr>
+<tr>
+<td>echo ‘内容’ &gt;! 文件路径</td>
+<td style="text-align:left">强制创建文件并且写入内容</td>
+</tr>
+<tr>
+<td>echo ‘内容’ &gt;&gt; 文件路径</td>
+<td style="text-align:left">追加内容到文件内</td>
+</tr>
+<tr>
+<td>touch 文件名</td>
+<td style="text-align:left">创建文件</td>
+</tr>
+<tr>
+<td>cp 源路径 目标路径</td>
+<td style="text-align:left">复制文件</td>
+</tr>
+<tr>
+<td>cp -r 源路径 目标路径</td>
+<td style="text-align:left">复制文件夹（递归复制）</td>
+</tr>
+<tr>
+<td>man 某命令</td>
+<td style="text-align:left">命令手册查看</td>
+</tr>
+<tr>
+<td>tree 目录</td>
+<td style="text-align:left">查看目录树结构</td>
+</tr>
+<tr>
+<td>curl -L 链接</td>
+<td style="text-align:left">下载文件</td>
+</tr>
+<tr>
+<td>wget -p -H -e robots=off 网址</td>
+<td style="text-align:left">拷贝网页 </td>
+</tr>
+<tr>
+<td>cat 文件</td>
+<td style="text-align:left">查看文件内容</td>
+</tr>
+</tbody>
+</table>
 
         </div>
     
@@ -313,17 +396,9 @@
 <p>git pull //<em>取回远程主机某个分支的更新，再与本地的指定分支合并；</em><br>git add //<em>将要提交的文件的信息添加到索引库中；</em><br>git commit -m ‘提交信息’ //<em>用于将更改记录(提交)到存储库（本地）；</em><br>git pull //<em>查看远程仓库是否有改动；</em><br>git push //<em>命令用于将本地分支的更新，推送到远程主机。</em></p>
 <p><strong>不要上传这个文件夹node_modules</strong><br><strong>node_modules文件夹主要是用于放用包管理工具下载安装了的包，比如webpack、gulp、grunt这些工具。</strong></p>
 <h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><p>git init //<em>用来初始化一个 Git 仓库</em><br>git status //<em>用于显示工作目录和暂存区的状态。</em><br>git status -s //<em>以精简的方式显示文件状态</em></p>
-<h4 id="状态码："><a href="#状态码：" class="headerlink" title="状态码："></a>状态码：</h4><pre><code>A: 你本地新增的文件（服务器上没有）.
-C: 文件的一个新拷贝.
-D: 你本地删除的文件（服务器上还在）
-M: 文件的内容或者mode被修改了.
-R: 文件名被修改了。
-T: 文件的类型被修改了。
-U: 文件没有被合并(你需要完成合并才能进行提交)。
-X: 未知状态(很可能是遇到git的bug了，你可以向git提交bug report)
-？：未被git进行管理，可以使用git add file1把file1添加进git能被git所进行管理
-</code></pre><p>git add //<em>命令可将该文件添加到缓存</em><br>git commit 将缓存区内容添加到仓库中， -m 选项以在命令行中提供提交注释，用-a跳过提交缓存的流程。例：git commit -am “注释”</p>
-<p>使用 git log 命令列出历史提交记录，<br>    用 –oneline 选项来查看历史记录的简洁的版本；<br>    用 –graph 选项，查看历史中什么时候出现了分支、合并；<br>    用 ‘–reverse’参数来逆向显示所有日志；<br>    查找指定用户的提交日志可以使用命令：git log –author ；<br>    查找指定日期，可以执行几个选项：–since 和 –before，或者可以用 –until 和 –after；<br>    用 –no-merges 选项以隐藏合并提交。</p>
+<h4 id="状态码："><a href="#状态码：" class="headerlink" title="状态码："></a>状态码：</h4><p>A: 你本地新增的文件（服务器上没有）.<br>C: 文件的一个新拷贝.<br>D: 你本地删除的文件（服务器上还在）<br>M: 文件的内容或者mode被修改了.<br>R: 文件名被修改了。<br>T: 文件的类型被修改了。<br>U: 文件没有被合并(你需要完成合并才能进行提交)。<br>X: 未知状态(很可能是遇到git的bug了，你可以向git提交bug report)<br>??：未被git进行管理，可以使用git add file1把file1添加进git能被git所进行管理</p>
+<p>git add //<em>命令可将该文件添加到缓存</em><br>git commit 将缓存区内容添加到仓库中， -m 选项以在命令行中提供提交注释，用-a跳过提交缓存的流程。例：git commit -am “注释”</p>
+<p><strong>使用 git log 命令列出历史提交记录，</strong><br>用 –oneline 选项来查看历史记录的简洁的版本；<br>用 –graph 选项，查看历史中什么时候出现了分支、合并；<br>用 ‘–reverse’参数来逆向显示所有日志；<br>查找指定用户的提交日志可以使用命令：git log –author ；<br>查找指定日期，可以执行几个选项：–since 和 –before，或者可以用 –until 和 –after；<br>用 –no-merges 选项以隐藏合并提交。</p>
 <p>history //<em>查询gitbash历史命令</em></p>
 
         </div>
